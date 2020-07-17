@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lineas nombradas</title>
+    <title>lineas nombradas</title>
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
       }
       .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4,100px);
         grid-gap: 5px;
         height: 100vh;
-        justify-items: center;
-        align-items: center;
+        justify-content:space-evenly;
+        align-content: center;
+        
       }
       .item {
         background: lightblue;
@@ -23,8 +24,8 @@
         border: 1px solid purple;
       }
       .item:nth-of-type(5){
-        justify-self: start;
-        align-self: start;
+        /* justify-self: start;
+        align-self: start; */
       }
     </style>
   </head>

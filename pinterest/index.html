@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pinterest</title>
+    <style>
+      .post-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-gap: 5px;
+        justify-content: center;
+      }
+      .post {
+        background: #f2f2f2;
+        border-radius: 5px;
+        position: relative;
+      }
+      .post-image {
+        padding: 10px;
+        margin: 0;
+      }
+      .post-image img {
+        border-radius: 5px;
+        max-width: 100%;
+      }
+      .level-3 {
+        grid-row-end: span 3;
+      }
+      .level-2 {
+        grid-row-end: span 2;
+      }
+      .level-1 {
+        grid-row-end: span 1;
+      }
+      .post-overlay {
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .post:hover .post-overlay {
+        display: flex;
+      }
+      .post-likes,
+      .post-comments {
+        width: 80px;
+        margin: 5px;
+        font-weight: 700;
+        text-align: center;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="post-list">
+      <a class="post level-3">
+        <figure class="post-image">
+          <img src="landing.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-2">
+        <figure class="post-image">
+          <img src="tshirt.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-1">
+        <figure class="post-image">
+          <img src="house.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-3">
+        <figure class="post-image">
+          <img src="landing.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-2">
+        <figure class="post-image">
+          <img src="tshirt.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-1">
+        <figure class="post-image">
+          <img src="house.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-3">
+        <figure class="post-image">
+          <img src="landing.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-2">
+        <figure class="post-image">
+          <img src="tshirt.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-1">
+        <figure class="post-image">
+          <img src="house.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-3">
+        <figure class="post-image">
+          <img src="landing.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-2">
+        <figure class="post-image">
+          <img src="tshirt.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-1">
+        <figure class="post-image">
+          <img src="house.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-3">
+        <figure class="post-image">
+          <img src="landing.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-2">
+        <figure class="post-image">
+          <img src="tshirt.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+      <a class="post level-1">
+        <figure class="post-image">
+          <img src="house.jpg" alt="post" />
+        </figure>
+        <span class="post-overlay">
+          <p>
+            <span class="post-likes">150<br>likes</span>
+            <span class="post-comments">10 comments</span>
+          </p>
+        </span>
+      </a>
+    </section>
+  </body>
+</html>

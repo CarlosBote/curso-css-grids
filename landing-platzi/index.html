@@ -17,15 +17,38 @@
         background: #23475b;
         color: white;
         padding: 32px 15px;
+        display: grid;
+        grid-template-columns: minmax(auto, 1024px);
+        justify-content: center;
+      }
+      .hero-container {
+        display: grid;
+        grid-template-columns: 70px 1fr 320px;
+        grid-template-areas:
+          "badge title form"
+          ". description form"
+          ". countdown form";
+        grid-gap: 10px;
+      }
+      .badge {
+        grid-area: badge;
+      }
+      .badge img {
+        max-width: 70px;
       }
       .title {
+        grid-area: title;
         font-size: 36px;
         font-weight: normal;
         margin: 0;
         display: flex;
         align-items: center;
       }
+      .description {
+        grid-area: description;
+      }
       .form {
+        grid-area: form;
         background: rgba(255, 255, 255, 0.9);
         text-align: center;
         padding: 1.5em;
@@ -55,34 +78,67 @@
         border-bottom: 5px solid #6d932b;
         display: inline-block;
       }
+      .countdown {
+        grid-area: countdown;
+      }
+      .countdown p {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+      }
+      .countdown span {
+        font-size: 33px;
+      }
+      .countdown span:after {
+        content: ":";
+        display: inline-block;
+        margin: 0 5px;
+      }
+      .countdown span:last-child:after {
+        display: none;
+      }
+      p {
+        margin: 0;
+      }
+      @media screen and (max-width: 768px) {
+        .hero-container {
+          grid-template-columns: 70px 1fr;
+          grid-template-areas:
+            "badge title"
+            "description description"
+            "form form"
+            "countdown countdown";
+        }
+      }
     </style>
   </head>
   <body>
     <div class="hero">
-      <div class="badge">
-        <img src="badge.png" alt="badge" />
-      </div>
-      <h1 class="title">Curso de React.js</h1>
-      <div class="description">
-        <p>
-          ractaskdfkoasedjfiojasdfjasdjfj sdoajf iosdjfi sjfjasdojif siojfsaioj
-          asjidf osjaskj flsakjf lskjfasjl jklsj klsdjklsalfj klkkjjlj
-        </p>
-      </div>
-      <form action="" class="form">
-        <p>Registrate a Platzi</p>
-        <input type="text" placeholder="Nombre" />
-        <input type="email" placeholder="Correo Electrónico" />
-        <button type="submit">Comienza ahora</button>
-      </form>
-      <div class="countdown">
-        <p>Lanzamiento:</p>
-        <p>
-          <span>01d</span>
-          <span>03h</span>
-          <span>41m</span>
-          <span>20s</span>
-        </p>
+      <div class="hero-container">
+        <div class="badge">
+          <img src="badge.png" alt="badge" />
+        </div>
+        <h1 class="title">Curso de React.js</h1>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem facere, debitis reiciendis obcaecati adipisci! Dignissimos exercitationem unde beatae, voluptas nemo, sint officiis libero rem modi illum voluptatum maiores voluptatem?
+          </p>
+        </div>
+        <form action="" class="form">
+          <p>Registrate a Platzi</p>
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Correo Electrónico" />
+          <button type="submit">Comienza ahora</button>
+        </form>
+        <div class="countdown">
+          <p>Lanzamiento:</p>
+          <p>
+            <span>01d</span>
+            <span>03h</span>
+            <span>41m</span>
+            <span>20s</span>
+          </p>
+        </div>
       </div>
     </div>
   </body>
